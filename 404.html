@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #000000;
+}
+
+p {
+  font-size: 16px;
+  color: #444444;
+  white-space: pre-line;
+}
+
+</style>
+</head>
+<body>
+<p><t1 id="text1">the fog is coming</t1>
+<script>
+  let og = document.getElementById("text1").innerHTML;
+  setInterval(function() {
+      document.getElementById("text1").innerHTML = document.getElementById("text1").innerHTML + "\n" + og;
+    }, 1000)
+</script>
+</p>
